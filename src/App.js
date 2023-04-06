@@ -6,7 +6,6 @@ import Schedule from "./Schedule";
 function App() {
   const timeArr = Array.apply(null, new Array(24));
   const [scheduleArr, setScheduleArr] = useState([null]);
-  const index = useRef(null);
   const [modal, setModal] = useState(false);
   const inputRef = useRef();
 
@@ -34,7 +33,6 @@ function App() {
 
   useEffect(() => {
     let schedule = localStorage.getItem("Schedule");
-    index.current = schedule.length;
     if (schedule === null || schedule === undefined || schedule === "") {
       localStorage.setItem("Schedule", []);
     } else {
