@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/toy_scheduler/static/css/main.64e646e3.css",
-    "main.js": "/toy_scheduler/static/js/main.e9185d91.js",
+    "main.css": "/toy_scheduler/static/css/main.3bfb286b.css",
+    "main.js": "/toy_scheduler/static/js/main.f6256cf3.js",
     "static/js/787.89eaf1e5.chunk.js": "/toy_scheduler/static/js/787.89eaf1e5.chunk.js",
     "index.html": "/toy_scheduler/index.html",
-    "main.64e646e3.css.map": "/toy_scheduler/static/css/main.64e646e3.css.map",
-    "main.e9185d91.js.map": "/toy_scheduler/static/js/main.e9185d91.js.map",
+    "main.3bfb286b.css.map": "/toy_scheduler/static/css/main.3bfb286b.css.map",
+    "main.f6256cf3.js.map": "/toy_scheduler/static/js/main.f6256cf3.js.map",
     "787.89eaf1e5.chunk.js.map": "/toy_scheduler/static/js/787.89eaf1e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64e646e3.css",
-    "static/js/main.e9185d91.js"
+    "static/css/main.3bfb286b.css",
+    "static/js/main.f6256cf3.js"
   ]
 }
