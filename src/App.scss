@@ -94,7 +94,6 @@
           display: flex;
           .timeblock {
             width: calc(100% / (24 * 3));
-            border: 1px solid red;
             margin-right: 1px;
             &:nth-child(3n) {
               margin-right: 5px;

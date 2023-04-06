@@ -14,12 +14,10 @@ function App() {
 
     if (e.target.title.value === "") {
       alert("값을 입력해주세요");
-      // console.log("값을 입력해주세요");
       return;
     }
     if (scheduleArr.includes(e.target.title.value)) {
       alert("중복된 값이 있습니다.");
-      // console.log("중복된 값이 있습니다.");
       return;
     }
 
@@ -28,6 +26,10 @@ function App() {
     setModal(false);
   }
   function createSchedule() {
+    if (scheduleArr.length > 10) {
+      alert("일정이 너무 많습니다!");
+      return;
+    }
     setModal(!modal);
   }
 

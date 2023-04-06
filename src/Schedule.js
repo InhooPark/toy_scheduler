@@ -5,6 +5,21 @@ const Schedule = ({ schedule, index }) => {
   scheduleTimeArr.fill("false");
   const [arr, setArr] = useState(scheduleTimeArr);
 
+  const color = ["red", "orange", "yellow", "yellowgreen", "green", "blue", "navy", "purple", "darkviolet", "violet"];
+
+  /*
+  color: red;
+  color: orange;
+  color: yellow;
+  color: yellowgreen;
+  color: green;
+  color: blue;
+  color: navy;
+  color: purple;
+  color: darkviolet;
+  color: violet;
+  */
+
   function getTimeBlock() {
     const timeblock = localStorage.getItem(schedule);
     setArr(timeblock.split(","));
@@ -46,9 +61,14 @@ const Schedule = ({ schedule, index }) => {
         {arr &&
           arr.map((timeblock, key) => {
             return timeblock === "true" ? (
-              <li className="timeblockCheck" key={key} onClick={() => timeBlockClick(key)}></li>
+              <li
+                className="timeblockCheck"
+                key={key}
+                onClick={() => timeBlockClick(key)}
+                style={{ border: `1px solid ${color[index - 1]}`, backgroundColor: `${color[index - 1]}` }}
+              />
             ) : (
-              <li className="timeblock" key={key} onClick={() => timeBlockClick(key)}></li>
+              <li className="timeblock" key={key} onClick={() => timeBlockClick(key)} style={{ border: `1px solid ${color[index - 1]}` }} />
             );
           })}
       </ul>
